@@ -3,7 +3,7 @@ import socketIo from 'socket.io-client'
 import { useEffect, useRef, useState } from 'react';
 import faker from 'faker'
 
-const MESSAGE_SERVER_URL = "http://localhost:5000/"
+const MESSAGE_SERVER_URL = process.env.MESSAGE_SERVER_URL || "http://localhost:5000/"
 
 function App() {
 
