@@ -11,7 +11,7 @@ npm i socket.io // install socket io in Express
 ```
 // FRONTEND setup
 import socketIOClient from "socket.io-client";
-const MESSAGE_SERVER_URL = "http://localhost:5000";
+const MESSAGE_SERVER_URL = process.env.MESSAGE_SERVER_URL || "http://localhost:5000";
 
 // connect on load...
 useEffect(() => {
